@@ -54,6 +54,23 @@ h1, h2, h3, p, ul {
     margin: 0;
 }
 
+h2 {
+    display: block;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
 .img {
     display: block;
     max-width: 100%;
@@ -67,7 +84,6 @@ h1, h2, h3, p, ul {
 }
 
 .container {
-    display: flex;
     width: 1200px;
     padding: 0 15px;
     margin-left: auto;
@@ -76,6 +92,10 @@ h1, h2, h3, p, ul {
 
 .header {
     border-bottom: 1px solid var(--header-border);
+}
+
+.header .container {
+    display: flex;
 }
 
 .logo {
@@ -98,7 +118,7 @@ h1, h2, h3, p, ul {
 .site-nav {
     display: flex;
     align-items: center;
-    margin-right: auto;
+    margin-right: 331px;
 }
 
 .site-nav .item:not(:last-child) {
@@ -130,11 +150,12 @@ h1, h2, h3, p, ul {
 
 .contacts {
     display: flex;
+    align-items: center;
+    padding: 32px 0 32px;
 }
 
-.contacts .item {
+.contacts .item:not(:last-child) {
     margin-right: 50px;
-    padding: 32px 0 32px;
 }
 
 .contacts a:hover,
@@ -201,9 +222,10 @@ h1, h2, h3, p, ul {
 }
 
 .section {
+    display: block;
     margin-top: 0;
-    text-align: center;
     margin-bottom: 0;
+    text-align: center;
 }
 
 .section-title {
@@ -223,14 +245,12 @@ h1, h2, h3, p, ul {
     display: flex;
     align-items: center;
     margin-right: auto;
-    margin-bottom: 94px;
 }
 
 .features .item:not(:last-child) {
     margin-right: 50px;
 }
  
-
 .features-title {
     margin-top: 94px;
     margin-bottom: 10px;
@@ -262,10 +282,13 @@ h1, h2, h3, p, ul {
 
 /*gallery*/
 
+.container .gallery {
+    margin-bottom: 0;
+}
+
 .gallery {
     display: flex;
     align-items: center;
-    margin-right: auto;
     margin-bottom: 94px;
 }
 
@@ -275,12 +298,16 @@ h1, h2, h3, p, ul {
 
 /*team*/
 
+.container .team {
+    padding-bottom: 94px;
+    margin-top: 0;
+}
+
 .team {
     display: flex;
     align-items: center;
     text-align: center;
     margin-right: auto;
-    margin-bottom: 94px;
 }
 
 .team .item:not(:last-child) {
@@ -352,6 +379,10 @@ h1, h2, h3, p, ul {
 .portfolio {
     background-color: var(--simply-white);
     margin: 0 215px 94px;
+}
+
+.portfolio .container {
+    display: flex;
 }
 
 /*filters*/
