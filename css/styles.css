@@ -145,7 +145,12 @@ h2 {
 .contacts {
     display: flex;
     align-items: center;
-    padding: 32px 0 32px;
+}
+
+.contacts .tel-header,
+.contacts .mail-header {
+    padding-top: 32px;
+    padding-bottom: 32px;
 }
 
 .contacts .item:not(:last-child) {
@@ -217,7 +222,7 @@ h2 {
 }
 
 .section {
-    padding-top: 0;
+    padding-top: 94px;
     padding-bottom: 94px;
     margin-top: 0;
     margin-bottom: 0;
@@ -240,16 +245,15 @@ h2 {
     margin-right: auto;
 }
 
-.features.item {
-    width: 270px;
-}
-
 .features .item:not(:last-child) {
     margin-right: 30px;
 }
 
+.features-item {
+    width: 270px;
+}
+
 .features-title {
-    padding-top: 94px;
     margin-bottom: 10px;
     color: var(--secondary-color);
     font-weight: 700;
@@ -310,8 +314,8 @@ h2 {
 }
 
 .team-description {
-    margin-top: 30px;
-    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .team-title {
@@ -328,13 +332,9 @@ h2 {
 }
 
 .footer {
-    background-color: var(--fon-grey);
-}
-
-.footer .container {
-    display: block;
     padding-top: 60px;
     padding-bottom: 60px;
+    background-color: var(--fon-grey);
 }
 
 .footer .logo {
@@ -484,6 +484,7 @@ h2 {
 }
 
 .work-title {
+    margin-bottom: 4px;
     color: var(--secondary-color);
     font-weight: 700;
     font-size: 18px;
