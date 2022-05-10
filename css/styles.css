@@ -120,6 +120,7 @@ h2 {
 }
 
 .site-nav .link {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--secondary-color);
@@ -148,6 +149,7 @@ h2 {
 
 .contacts .tel-header,
 .contacts .mail-header {
+    display: block;
     padding-top: 32px;
     padding-bottom: 32px;
 }
@@ -474,7 +476,7 @@ h2 {
 .work .item {
     width: 370px;
     margin-right: 30px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 }
 
 .work .item.item:nth-child(3n) {
